@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_setting_back"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="회원정보"
+            android:layout_weight="0.8"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/test3"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="확인"
+            android:id="@+id/setting_ok"
+            android:visibility="invisible"
+            android:textColor="#3995d3"
+            android:textSize="18dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="프로필 및 계정"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:textColor="#3995d3"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#D8D8D8"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="닉네임"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:id="@+id/userNick"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/edit_userNick"
+                android:textSize="15dp"
+                android:background="@drawable/btn_rect_black"
+                android:hint="변경할 아이디"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="수정"
+                android:gravity="center"
+                android:id="@+id/userNick_change"
+               android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#EAEAEA"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="연결된 계정"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/userId"
+                android:textColor="#000000"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:background="#D8D8D8"
+        android:layout_height="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="비밀번호 변경"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:id="@+id/password_re"
+                android:gravity="right"
+                android:textColor="#3995d3"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:text="변경" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_rect"
+            android:layout_marginBottom="5dp"
+            android:hint="새 비밀번호를 입력하세요"
+            android:textSize="15dp"
+            android:id="@+id/edit_pass"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_rect"
+            android:hint="새 비밀번호를 다시 입력하세요"
+            android:textSize="15dp"
+            android:id="@+id/edit_pass_re"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="반려견"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:layout_weight="0.2"
+                android:textColor="#3995d3"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textColor="#3995d3"
+                android:id="@+id/text_pet_add"
+                android:gravity="right"
+
+                android:layout_marginBottom="15dp"
+                android:text="+ 추가"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_height="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="이름"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/user_petname"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petName"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:gravity="center"
+                    android:id="@+id/user_pet_name_change"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#EAEAEA"
+                android:layout_height="1dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="생년월일"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:id="@+id/user_pet_bir"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petBir"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:gravity="center"
+                    android:id="@+id/user_pet_bir_change"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_marginBottom="5dp"
+                android:layout_height="1dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/pet_layout2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="이름"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/user_petname2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petName2"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:id="@+id/user_pet_name_change2"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#EAEAEA"
+                android:layout_height="1dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="생년월일"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:id="@+id/user_pet_bir2"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petBir2"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:id="@+id/user_pet_bir_change2"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_marginBottom="5dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="삭제"
+                android:gravity="right"
+                android:id="@+id/delete_pet2"
+                android:textColor="#3995d3"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/pet_layout3"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="이름"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/user_petname3"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petName3"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:id="@+id/user_pet_name_change3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#EAEAEA"
+                android:layout_height="1dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="생년월일"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:id="@+id/user_pet_bir3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edit_petBir3"
+                    android:textSize="15dp"
+                    android:background="@drawable/btn_rect_black"
+                    android:hint="변경할 이름"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="수정"
+                    android:id="@+id/user_pet_bir_change3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#D8D8D8"
+                android:layout_marginBottom="5dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="삭제"
+                android:gravity="right"
+                android:id="@+id/delete_pet3"
+                android:textColor="#3995d3"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="로그아웃"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_logout_user"
+            android:stateListAnimator="@null"
+            android:background="@drawable/btn_circle"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="회원탈퇴"
+            android:gravity="center"
+            android:id="@+id/user_delete"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

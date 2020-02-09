@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoNUM"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoID"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/photoIMG"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoTITLE"
+            android:layout_weight="1"
+            android:textColor="#3F3F3F"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/melona"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoCONTENT"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:fontFamily="@font/melona"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoDATE"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="12dp"
+            android:fontFamily="@font/melona"
+            android:textColor="#000000"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/photoNAME"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

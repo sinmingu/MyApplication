@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="산책날씨" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="산책일정" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="운동그래프" />
+
+    </group>
+-->
+
+    <item android:title="Menu">
+        <menu>
+
+            <item
+                android:id="@+id/nav_introduction"
+                android:icon="@drawable/s_info"
+                android:title="소개" />
+
+            <item
+                android:id="@+id/nav_care"
+                android:icon="@drawable/s_book"
+                android:title="산책상식" />
+
+            <item
+                android:id="@+id/nav_weather"
+                android:icon="@drawable/s_weather"
+                android:title="산책날씨" />
+
+            <item
+                android:id="@+id/nav_date"
+                android:icon="@drawable/s_schedule"
+                android:title="산책일정" />
+
+            <item
+                android:id="@+id/nav_graph"
+                android:icon="@drawable/s_graph"
+                android:title="운동그래프" />
+
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/s_local"
+                android:title="추천장소" />
+        </menu>
+    </item>
+
+
+    <item android:title="My">
+        <menu>
+
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/s_user"
+                android:title="내 정보" />
+            <item
+                android:id="@+id/nav_picture"
+                android:icon="@drawable/s_gallery"
+                android:title="산책사진" />
+
+            <item
+                android:id="@+id/nav_talk"
+                android:icon="@drawable/s_pettalk"
+                android:title="펫톡" />
+
+            <item
+                android:id="@+id/nav_notice"
+                android:icon="@drawable/s_notice"
+                android:title="공지사항" />
+
+
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="#3995d3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3995d3"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:text="※이미지 클릭시 관련 홈페이지로 이동합니다."
+        android:fontFamily="@font/melona"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/map_img"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/mesgase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/melona_bold"
+        android:textColor="#000000"
+        android:background="@drawable/btn_white_circle"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="14dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="주소 : "
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:textColor="#616161"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_map_flag"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:textColor="#616161"
+            android:fontFamily="@font/melona"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="전화 : "
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:textColor="#616161"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_map_call"
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:layout_gravity="center"
+            android:textColor="#3995d3"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="운영시간 : "
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:textColor="#616161"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_map_open"
+            android:layout_gravity="center"
+            android:fontFamily="@font/melona"
+            android:textSize="14dp"
+            android:textColor="#616161"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#616161"
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:layout_height="wrap_content"
+            android:text="운영시간 : " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_map_time"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:textColor="#616161"
+            android:fontFamily="@font/melona"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginBottom="25dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="이용요금 : "
+            android:fontFamily="@font/melona"
+            android:textColor="#616161"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_map_money"
+            android:textSize="14dp"
+            android:fontFamily="@font/melona"
+            android:textColor="#616161"
+            android:layout_gravity="center"
+            android:text="정보가 없습니다"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/melona"
+            android:text="닫기"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+</LinearLayout>

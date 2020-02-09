@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <!--  // 카카오 앱 키 -->
+
+    <string name="kakao_app_key">bfbcebd5b3b0ee504f6ef045535a425a</string>
+
+    <!-- 애드몹 -->
+    <string name="admob_app_id">ca-app-pub-5784293657699097~3465156383</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5784293657699097/1022927504</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <!--  // 페이스북북 앱 키 -->
+    <string name="facebook_app_id">2374125792827339</string>
+    <string name="fb_login_protocol_scheme">f2c0d9e61bd9b5270efe362472f0bcb9s8PEtNHoqCg2v0MjmpO5rzIrUo0=</string>
+
+
+</resources>

@@ -1,0 +1,2125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity">
+
+
+    <TabHost
+        android:id="@+id/tab_host"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+
+            android:id="@android:id/tabs"
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+
+                android:id="@+id/tab_view1"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#3995d3"
+                    android:id="@+id/linear_main_bg"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:id="@+id/img_local"
+                            android:layout_height="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/location_here"
+                            android:text="제 이름은 두부에요"
+                            android:textSize="13dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pet_talk"
+                            android:text="제 이름은 두부에요"
+                            android:paddingBottom="5dp"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/bubble"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="40dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="40dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/pet_imgbtn"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+
+                        android:layout_gravity="right"
+                        android:paddingRight="5dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text_count_walk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="두부랑 "
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/text_count_walk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="두부랑 "
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="산책중"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.6"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/img_temp"
+                            android:layout_height="match_parent" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:text="체감온도"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/img_mise"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:text="미세먼지"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/img_weather"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="13dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:text="날씨"/>
+
+                    </LinearLayout>
+
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:id="@+id/now_temp_img"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/now_temp_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:textColor="#000000"
+                                android:textSize="27dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="0.7"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/now_temp_maxmin_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="#0054FF"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/now_temp_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="#000000"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/now_temp_min_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="#FF0000"
+                                    android:textSize="12dp" />
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:background="#ABABAB"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:text="미세먼지"
+                                android:gravity="center"
+                                android:textSize="12dp"
+                                android:textColor="#000000"
+                                android:layout_height="match_parent" />
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:layout_marginRight="-5dp"
+                                    android:id="@+id/now_dust_img"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:textSize="11dp"
+                                    android:textColor="#757575"
+                                    android:gravity="center"
+                                    android:id="@+id/now_dust_text"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:background="#ABABAB"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:text="초미세먼지"
+                                android:textSize="12dp"
+                                android:textColor="#000000"
+                                android:gravity="center"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:weightSum="1"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:layout_marginRight="-5dp"
+                                    android:id="@+id/now_weather_img"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center"
+                                    android:textColor="#757575"
+                                    android:textSize="11dp"
+                                    android:id="@+id/now_weather_text"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="5dp"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/btn_circle"
+                            android:textColor="#ffffff"
+                            android:stateListAnimator="@null"
+                            android:id="@+id/btn_pet_walking"
+                            android:text="산책하기"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_view2"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.1"
+                    android:background="#ffffff"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+
+                    <!--
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                    </com.google.android.gms.ads.AdView>
+
+                    -->
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/calendar_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:paddingRight="12dp"
+                        android:paddingLeft="12dp"
+                        app:mcv_selectionColor="#a9dbf0cb"
+                        app:mcv_showOtherDates="defaults" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="#EAEAEA"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/text_click_date"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="날짜를 선택해주세요"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="-5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.425"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:text="일정"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.275"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:id="@+id/today_walk"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/custom_sche"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/btn_today_add_walk"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="-5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="3dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:gravity="left"
+                            android:layout_marginRight="5dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="입력"
+                                android:textSize="12dp"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:text="추가"
+                                android:textColor="#000000"
+                                android:gravity="center"
+                                android:textSize="12dp"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="일정 없음"
+                            android:layout_weight="0.15"
+                            android:id="@+id/today_walk_list"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/btn_delete_date1"
+                            android:text="삭제"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textSize="13dp"
+                            android:stateListAnimator="@null"
+                            android:textColor="#000000"
+                            android:background="@drawable/btn_rect_black"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:id="@+id/date2_hide"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:layout_weight="0.15"
+                            android:text="일정 없음"
+                            android:id="@+id/today_walk_list2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/btn_delete_date2"
+                            android:text="삭제"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:stateListAnimator="@null"
+                            android:textColor="#000000"
+                            android:background="@drawable/btn_rect_black"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:weightSum="1"
+                        android:visibility="gone"
+                        android:id="@+id/date3_hide"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="일정 없음"
+                            android:layout_weight="0.15"
+                            android:id="@+id/today_walk_list3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/btn_delete_date3"
+                            android:text="삭제"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:stateListAnimator="@null"
+                            android:textColor="#000000"
+                            android:background="@drawable/btn_rect_black"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edit_today_walk"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/btn_circle"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.9"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_view3"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:weightSum="1"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingTop="15dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/graph_km"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textSize="30dp"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="함께 산책한거리(m)"
+                            android:gravity="center"
+                            android:textColor="#616161"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/graph_count"
+                                    android:gravity="center"
+                                    android:text="5"
+                                    android:textSize="18dp"
+                                    android:textColor="#000000"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="주간 산책 횟수"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/graph_speed"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textSize="18dp"
+                                    android:textColor="#000000"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="평균 산책 거리(m)"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/graph_time"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textSize="18dp"
+                                    android:textColor="#000000"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="평균 산책 시간(분)"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:textSize="12dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="보호자 소모 칼로리"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:textSize="11dp"
+                            android:layout_marginTop="40dp"
+                            android:background="#e0e0e0"
+                            android:layout_height="wrap_content" />
+
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/pet_walk_chart"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/walk_chart"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:text="일일 산책 평균"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:textSize="11dp"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="5dp"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date0"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:gravity="left"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date0"
+                                    android:layout_height="wrap_content" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info0"
+                                    android:layout_height="wrap_content" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time0"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date1"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date1"
+                                    android:layout_height="wrap_content" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:paddingTop="5dp"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:gravity="center"
+                                    android:id="@+id/text_today_info1"
+                                    android:layout_height="wrap_content" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time1"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date2"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date2"
+                                    android:layout_height="wrap_content" />
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:gravity="center"
+                                    android:id="@+id/text_today_info2"
+                                    android:layout_height="wrap_content" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time2"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date3"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:id="@+id/text_today_info_date3"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info3"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time3"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date4"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date4"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info4"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time4"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date5"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:paddingTop="5dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date5"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info5"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:id="@+id/text_today_info_time5"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/img_today_info_date6"
+                                    android:layout_height="30dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:textSize="12dp"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#616161"
+                                    android:layout_weight="1"
+                                    android:id="@+id/text_today_info_date6"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:gravity="center"
+                                    android:id="@+id/text_today_info6"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="테스트2"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textColor="#616161"
+                                    android:gravity="center"
+                                    android:id="@+id/text_today_info_time6"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#e0e0e0"
+                                android:layout_marginBottom="15dp"
+                                android:layout_height="1dp" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/graph_test"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:id="@+id/graph_test_btn"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/tab_view4"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="#3995d3"
+                        android:paddingBottom="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0.45"
+                        android:weightSum="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="0.8"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:id="@+id/img_local2"
+                                android:layout_height="30dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/view4_text_address"
+                                android:text="제 이름은 두부에요"
+                                android:textSize="13dp"
+                                android:textColor="#ffffff"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
+                            android:id="@+id/view4_img_main"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="15dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.55"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.7"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:id="@+id/view4_now_temp_img"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/view4_now_temp_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:textColor="#000000"
+                                        android:textSize="27dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_weight="0.7"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/view4_now_temp_maxmin_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:textColor="#0054FF"
+                                            android:textSize="12dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/view4_now_temp_center_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:textColor="#000000"
+                                            android:textSize="12dp" />
+
+                                        <TextView
+                                            android:id="@+id/view4_now_temp_max_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:textColor="#FF0000"
+                                            android:textSize="12dp" />
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="1dp"
+                                    android:background="#ABABAB"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="미세먼지"
+                                        android:gravity="center"
+                                        android:textSize="12dp"
+                                        android:textColor="#000000"
+                                        android:layout_height="match_parent" />
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_height="match_parent">
+
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.6"
+                                            android:layout_marginRight="-5dp"
+                                            android:id="@+id/view4_now_dust_img"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"
+                                            android:textSize="12dp"
+                                            android:gravity="center"
+                                            android:textColor="#757575"
+                                            android:id="@+id/view4_now_dust_text"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="1dp"
+                                    android:background="#ABABAB"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="초미세먼지"
+                                        android:textSize="12dp"
+                                        android:textColor="#000000"
+                                        android:gravity="center"
+                                        android:layout_height="match_parent" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="1"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.6"
+                                            android:layout_marginRight="-5dp"
+                                            android:id="@+id/view4_now_weather_img"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"
+                                            android:gravity="center"
+
+                                            android:textSize="12dp"
+                                            android:textColor="#757575"
+                                            android:id="@+id/view4_now_weather_text"/>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:background="#EAEAEA"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="0dp" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_marginBottom="60dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="날짜"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="날씨"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="온도"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="습도"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="풍속"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:background="#EAEAEA"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_text1"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_text2"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_img"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_temp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_max"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_today_min"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:background="#EAEAEA"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_text1"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_text2"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_img"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_temp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_max"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_tomo_min"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:background="#EAEAEA"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:id="@+id/layout_more"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:gravity="center"
+                                        android:text="더보기"
+                                        android:id="@+id/view4_more_text"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/view4_more_img"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:id="@+id/more_layout"
+                                    android:visibility="gone"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:background="#EAEAEA"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="1dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_text1"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:textColor="#000000"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_text2"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_img"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_temp"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_max"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo2_min"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:background="#EAEAEA"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="1dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_text1"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:textColor="#000000"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_text2"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_img"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_temp"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_max"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo3_min"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:background="#EAEAEA"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="1dp" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_text1"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:textColor="#000000"
+                                            android:textStyle="bold"
+                                            android:layout_marginRight="5dp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_text2"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_img"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_temp"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_max"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/view4_tomo4_min"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:background="#EAEAEA"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="1dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="주간날씨"
+                                        android:visibility="gone"
+                                        android:id="@+id/weather_content"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/tab_view5"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.2"
+                        android:weightSum="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:transcriptMode="normal"
+                            android:divider="#ffffff"
+                            android:id="@+id/pet_talk_list"
+                            android:layout_height="match_parent">
+
+
+                        </ListView>
+<!--
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.15"
+                            android:id="@+id/pet_img_talk"
+                            android:background="#3995d3"
+                            android:layout_height="match_parent" />
+
+
+                            -->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.8"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#F5F5F5"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:textColor="#000000"
+                                android:layout_weight="0.2"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/edit_pet_talk"
+                                android:background="@null"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="말하기"
+                                android:id="@+id/btn_pet_talk"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:background="@null"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </TabHost>
+
+
+</LinearLayout>

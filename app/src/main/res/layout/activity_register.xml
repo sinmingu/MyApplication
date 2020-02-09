@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/register_cancle"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="산책하개회원가입"
+            android:layout_weight="0.8"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/test3"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+
+            android:textColor="#3995d3"
+            android:textSize="18dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+
+
+    <TabHost
+
+        android:id="@+id/reg_tab_host"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+
+            android:id="@android:id/tabs"
+            android:visibility="invisible"
+            android:layout_gravity="top"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" />
+
+        <FrameLayout
+
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/reg_tab_view1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+
+                    android:layout_height="match_parent">
+                    
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/register_page1"
+                            android:layout_height="20dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/register_page2"
+                            android:layout_height="20dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/register_page3"
+                            android:layout_height="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="산책하개 회원가입을 통해"
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="7dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="반려견의 여러 정보들을 확인하세요"
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="정확한 정보를 입력하시면 더욱 정확한 정보를 제공합니다."
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="14dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:id="@+id/img_test"
+                                    android:layout_gravity="center"
+                                    android:layout_height="150dp" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btn_reg_start"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:stateListAnimator="@null"
+                                android:background="@drawable/btn_circle"
+                                android:text="가입시작"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reg_tab_view2"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page4"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page5"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page6"
+                        android:layout_height="20dp" />
+
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="유저 정보입력"
+                            android:textColor="#3995d3"
+                            android:textSize="14dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:background="#BDBDBD"
+                            android:layout_marginBottom="15dp"
+                            android:layout_height="1.5dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="아이디(필수)"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="아이디"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="비밀번호(필수)"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_pw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="비밀번호"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="이름(필수)"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="이름"
+                            android:textSize="12dp" />
+
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:text="나이(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="나이"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="키(필수)"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="키"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="몸무게(필수)"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="12dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/Register_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/btn_rect"
+                            android:hint="몸무게"
+                            android:textSize="12dp" />
+
+
+
+                        <Button
+                            android:id="@+id/Register_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_circle"
+                            android:text="다음으로"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/reg_tab_view3"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page7"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page8"
+                        android:layout_height="20dp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/register_page9"
+                        android:layout_height="20dp" />
+
+
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="반려견 정보입력"
+                        android:textColor="#3995d3"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="#BDBDBD"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="견종(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_rect"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup1"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <RadioButton
+                                android:id="@+id/radio0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="12dp"
+                                android:layout_marginRight="10dp"
+                                android:buttonTint="#3995d3"
+                                android:text="소형견" />
+
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="12dp"
+                                android:layout_marginRight="10dp"
+                                android:buttonTint="#3995d3"
+                                android:text="중형견" />
+
+                            <RadioButton
+                                android:id="@+id/radio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#3995d3"
+                                android:textSize="12dp"
+                                android:textColor="#000000"
+                                android:text="대형견" />
+
+
+
+                        </RadioGroup>
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="이름(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/pet_name"
+                        android:background="@drawable/btn_rect"
+                        android:hint="이름"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="나이(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="number"
+                        android:background="@drawable/btn_rect"
+                        android:id="@+id/pet_age"
+                        android:hint="나이"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="성별(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/pet_sex"
+                        android:background="@drawable/btn_rect"
+                        android:hint="성별"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="생일(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pet_bir"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_rect"
+                        android:hint="생일"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="몸무게(필수)"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/pet_weight"
+                        android:inputType="number"
+                        android:background="@drawable/btn_rect"
+                        android:hint="몸무게"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="중성화여부"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:id="@+id/pet_sex_status"
+                        android:background="@drawable/btn_rect"
+                        android:hint="중성화 여부"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/Register_btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_circle"
+                        android:text="회원가입"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                </ScrollView>
+
+
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </TabHost>
+
+
+
+
+
+
+
+</LinearLayout>

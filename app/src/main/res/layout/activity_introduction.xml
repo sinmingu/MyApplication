@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    tools:context=".introduction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/intro_cancle"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="산책하개"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/test3"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="18dp"
+            android:id="@+id/intro_can"
+            android:visibility="invisible"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/intro_sub"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/test3"
+                android:textColor="#3995d3"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="산책하개"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="건강한 동행을 위한 시간"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.45"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#3F3F3F"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:text="사랑스러운 반려견의 스트레스와 비만을 방지하기 위해서는 \n\n적당한 운동이 중요합니다.\n\n
+산책은 건강 유지와 사회화 스트레스 해소에 도움이 됩니다.\n\n'산책하개'는 함께 산책하면서 반려견의 건강 관리\n\n에 도움을 줄 수 있길 바라는 마음으로 기획하였습니다.
+\n\n반려견 산책 도우미 서비스 '산책하개'는\n\n상황에 맞는 산책을 위하여 날씨, 대기 환경 등의 정보를\n\n 제공하며, 실시간으로 운동량을 기록할 수 있어 보다 더\n\n
+효율적인 산책활동을 할 수 있습니다."
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.45"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/intro_foot"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

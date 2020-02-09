@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".pet_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/info_no_cancle"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="내 정보"
+            android:id="@+id/title_text"
+            android:fontFamily="@font/test3"
+            android:layout_weight="0.8"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="12dp"
+            android:visibility="invisible"
+            android:id="@+id/info_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+       android:layout_marginBottom="10dp"
+        android:layout_height="1dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_pet_image1"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="유저 정보"
+                    android:textColor="#3995d3"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="이름"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_username"
+                        android:layout_weight="0.3"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="키"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/info_userheight"
+                            android:textColor="#000000"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/edit_userheight"
+                            android:textColor="#000000"
+                            android:visibility="gone"
+                            android:background="@null"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/modify_userheight"
+                            android:layout_weight="0.7"
+                            android:text="수정"
+                            android:gravity="center"
+                            android:textColor="#3995d3"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="몸무게"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/info_userweight"
+                            android:textColor="#000000"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/edit_userweight"
+                            android:textColor="#000000"
+                            android:background="@null"
+                            android:visibility="gone"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/modify_userweight"
+                            android:layout_weight="0.7"
+                            android:text="수정"
+                            android:textColor="#3995d3"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="펫 정보"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#3995d3"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="이름"
+
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petname"
+                        android:layout_weight="0.3"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="생년월일"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petbir"
+                        android:textColor="#000000"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="성별"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petsex"
+                        android:layout_weight="0.3"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="몸무게"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petweight"
+                        android:textColor="#000000"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="중성화여부"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petjoong"
+                        android:textColor="#000000"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="산책하개 권장량"
+                    android:textColor="#3995d3"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="반려견 정보를 토대로 계산된 하루 권장량입니다."
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="물 급수량"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petwater"
+                        android:textColor="#000000"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="사료 급여량"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/info_petfood"
+                        android:layout_weight="0.3"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#EAEAEA"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+                <!--
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/info_pet_image1"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/btn_rect_black"
+                            android:weightSum="1"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/layout_info1"
+                            android:layout_height="wrap_content">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.2"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="이름 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet1_name"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="체중 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet1_kg"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="1일 물 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet1_water"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="하루 사료 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/info_pet1_food"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:weightSum="1"
+                            android:background="@drawable/btn_rect_black"
+                            android:visibility="gone"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/layout_info2"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/info_pet_image2"
+                                android:layout_weight="0.8"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.2"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="이름 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet2_name"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="체중 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet2_kg"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="1일 물 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/info_pet2_water"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="하루 사료 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet2_food"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:weightSum="1"
+                            android:visibility="gone"
+                            android:background="@drawable/btn_rect_black"
+                            android:layout_marginBottom="30dp"
+                            android:id="@+id/layout_info3"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/info_pet_image3"
+                                android:layout_weight="0.8"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.2"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="이름 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet3_name"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="체중 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet3_kg"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="1일 물 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/info_pet3_water"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:text="하루 사료 급여량 : "
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/info_pet3_food"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                -->
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_main"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent"
+    tools:context=".GoogleMap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:background="#3995d3"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/map_cancle"
+            android:layout_height="wrap_content" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_weight="0.1"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:textStyle="bold"
+            android:text="자유이동"
+            android:textSize="11dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="@font/test3"
+            android:textSize="16dp"
+            android:text="산책장소"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/test_img"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/map_can"
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff"
+            android:fontFamily="@font/test3"
+            android:textStyle="bold"
+            android:text="자유이동"
+            android:textSize="11dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:layout_weight="0.15"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="찾는 장소를 클릭해주세요"
+            android:background="#3995d3"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.425"
+            android:background="#ffffff"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:layout_weight="0.2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/img_map_my"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:text="내주변"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:layout_weight="0.2"
+                    android:id="@+id/img_map_cafe"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:layout_weight="0.8"
+                    android:text="애견카페"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/img_map_tent"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:text="애견펜션"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/img_map_hotel"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:textSize="11dp"
+                    android:text="애견호텔"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.425"
+            android:background="#ffffff"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/img_map_test2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:layout_weight="0.8"
+                    android:text="공원"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/img_map_test3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:layout_weight="0.8"
+                    android:text="애견용품"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/img_map_test4"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:text="동물병원"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_marginRight="15dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/img_map_all"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#616161"
+                    android:text="모두"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="11dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    4
+
+
+</LinearLayout>

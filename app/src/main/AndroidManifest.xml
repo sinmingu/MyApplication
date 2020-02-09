@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mglj.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:name="com.mglj.myapplication.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_img"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="산책하개"
+        android:roundIcon="@drawable/mung"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mglj.myapplication.modify_photo"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5784293657699097~3465156383" />
+
+        <activity android:name="com.mglj.myapplication.detail_phpto" />
+        <activity android:name="com.mglj.myapplication.add_photo" />
+        <activity android:name="com.mglj.myapplication.pet_photo" />
+        <activity android:name="com.mglj.myapplication.pet_info" />
+        <activity android:name="com.mglj.myapplication.add_pet" />
+        <activity android:name="com.mglj.myapplication.introduction" />
+        <activity android:name="com.mglj.myapplication.Detail_pre" />
+        <activity android:name="com.mglj.myapplication.preList" />
+        <activity android:name="com.mglj.myapplication.SettingActivity" />
+        <activity android:name="com.mglj.myapplication.Detail_notice" />
+        <activity android:name="com.mglj.myapplication.petTest" />
+
+        <activity android:name="com.mglj.myapplication.CafeWeb_View" />
+        <activity android:name="com.mglj.myapplication.GoogleMap" />
+        <activity android:name="com.mglj.myapplication.Management" />
+        <activity android:name="com.mglj.myapplication.notice" /> <!-- 카카오톡 메타데이터 -->
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name="com.mglj.myapplication.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mglj.myapplication.MainScreen"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mglj.myapplication.PetWalking" />
+        <activity android:name="com.mglj.myapplication.RegisterActivity" />
+        <activity
+            android:name="com.mglj.myapplication.LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mglj.myapplication.MainActivity"
+            android:label="산책하개"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDtJflZQSxOfa8R9zEVXD1-LemUcSpVaYk" />
+
+        <receiver
+            android:name="com.mglj.myapplication.AlarmReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name="com.mglj.myapplication.AlarmReceiver_nofi"
+            android:process=":remote" />
+
+    </application>
+
+</manifest>

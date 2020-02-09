@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:background="#ffffff"
+    android:paddingBottom="40dp"
+    android:weightSum="1"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+
+    <LinearLayout
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="건강한 동행을 위한 시간"
+                android:textColor="#3995d3"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="산책하개"
+                android:textColor="#3995d3"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:fontFamily="@font/test3"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/btn_gray_circle"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:id="@+id/id_img"
+                    android:layout_height="15dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="아이디를 입력하세요"
+                    android:layout_weight="0.2"
+                    android:textSize="13dp"
+                    android:background="@null"
+                    android:id="@+id/userId"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_gray_circle"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:id="@+id/pw_img"
+                    android:layout_height="15dp" />
+
+                <EditText
+                    android:hint="비밀번호를 입력하세요"
+                    android:id="@+id/userPw"
+                    android:layout_weight="0.2"
+                    android:textSize="13dp"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:text="자동로그인"
+                    android:textColor="#9e9e9e"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:id="@+id/auto_login"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="테스트"
+                android:visibility="gone"
+                android:id="@+id/pet_btn"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_btn"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:stateListAnimator="@null"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_circle"
+                android:text="로그인"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:paddingRight = "25dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:paddingLeft = "25dp"
+        android:orientation = "vertical"
+        android:layout_height = "match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent">
+
+            <com.kakao.usermgmt.LoginButton
+
+                android:id="@+id/btn_kakao_login"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/test_hash"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_custom_login"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/test3"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/kakao"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/btn_custom_login2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/naver"
+                android:stateListAnimator="@null"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:fontFamily="@font/test3"
+                android:textColor="#000000"
+                android:textSize="14dp"
+
+                />
+
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:id="@+id/buttonNaverLogin"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="2dp"
+                android:stateListAnimator="@null"
+                android:layout_height="70dp" />
+
+            <Button
+                android:id="@+id/btn_custom_login3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_yellow_circle"
+                android:stateListAnimator="@null"
+                android:text="구글 로그인"
+                android:visibility="gone"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/Google_Login"
+                android:layout_width="match_parent"
+                app:isDarkTheme="true"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                ></com.google.android.gms.common.SignInButton>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnlogout"
+                    android:background="@drawable/btn_white_circle"
+                    android:stateListAnimator="@null"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:fontFamily="@font/melona"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="회원가입"
+                    android:id="@+id/move_RegiAc"
+                    android:gravity="left"
+                    android:fontFamily="@font/melona"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3995d3" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

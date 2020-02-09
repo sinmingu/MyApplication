@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/edit"
+        app:showAsAction="always"
+        android:icon="@drawable/camera"
+        android:title="프로필 사진 변경" >
+        <menu>
+            <item android:id="@+id/img_change1"
+                android:icon="@drawable/puppy2"
+                android:title="카메라로 변경" />
+
+
+            <item android:id="@+id/img_change2"
+                android:icon="@drawable/puppy9"
+                android:title="앨범에서 변경" />
+
+            <item android:id="@+id/img_change3"
+
+                android:icon="@drawable/puppy1"
+                android:title="기본사진 변경" />
+
+        </menu>
+    </item>
+
+
+</menu>
