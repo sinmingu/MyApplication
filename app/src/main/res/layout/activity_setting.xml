@@ -185,9 +185,7 @@
                 android:layout_weight="0.8"
                 android:text="변경" />
 
-
         </LinearLayout>
-
 
         <EditText
             android:layout_width="match_parent"
